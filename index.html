@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./syntax.css" />
+    <title>Final Project</title>
+</head>
+<body>
+
+
+
+    <section> 
+
+
+        <h1>Sleep Calculator</h1>
+
+          <!-- Initial Flattened Sun Circle Path Code -->
+        <svg id="nightTime" width="200" height="200" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class = 'sun' d="M60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30Z" fill="#FFE484"/>
+            </svg>
+        
+
+        
+    <!-- Identifying question 1 -->
+    <label>I will wake up at...</label>
+
+    <select id='question-hour'>
+        <option value='5:00pm'>1:00am</option>
+        <option value='5:30pm'>1:30am</option>
+        <option value='6:00pm'>2:00am</option>
+        <option value='6:30pm'>2:30am</option>
+        <option value='7:00pm'>3:00am</option>
+        <option value='7:30pm'>3:00am</option>
+        <option value='8:00pm'>4:00am</option>
+        <option value='8:30pm'>4:30am</option>
+        <option value='9:00pm'>5:00am</option>
+        <option value='9:30pm'>5:30am</option>
+        <option value='10:00pm'>6:00am</option>
+        <option value='10:30pm'>6:30am</option>
+        <option value='11:00pm'>7:00am</option>
+        <option value='11:30pm'>7:30am</option>
+        <option value='12am'>8:00am</option>
+        <option value='12:30am'>8:30am</option>
+        <option value='1:00am'>9:00am</option>
+        <option value='1:30am'>9:30am</option>
+        <option value='2:00am'>10:00am</option>
+        <option value='2:30am'>10:30am</option>
+        <option value='3:00am'>11:00am</option>
+        <option value='3:30am'>11:30am</option>
+        <option value='4:00am'>12:00pm</option>
+        <option value='4:30am'>1:00pm</option>
+        <option value='5:00am'>1:30pm</option>
+        <option value='5:30am'>2:00pm</option>
+        <option value='6:00am'>2:30pm</option>
+        <option value='6:30am'>3:00pm</option>
+        <option value='7:00am'>3:00pm</option>
+        <option value='7:30am'>4:00pm</option>
+        <option value='8:00am'>4:30pm</option>
+        <option value='8:30am'>5:00pm</option>
+        <option value='9:00am'>5:30pm</option>
+        <option value='9:30am'>6:00pm</option>
+        <option value='10:00am'>6:30pm</option>
+        <option value='10:30am'>7:00pm</option>
+        <option value='11:00am'>7:30pm</option>
+        <option value='11:30am'>8:00pm</option>
+        <option value='12:00pm'>8:30pm</option>
+        <option value='12:30pm'>9:00pm</option>
+        <option value='1:00pm'>9:30pm</option>
+        <option value='1:30pm'>10:00pm</option>
+        <option value='2:00pm'>10:30pm</option>
+        <option value='2:30pm'>11:00pm</option>
+        <option value='3:00pm'>11:30pm</option>
+        <option value='3:30pm'>12:00am</option>
+    </select>
+
+    <button onclick = 'calculateHour()'>I should be asleep by... </button>
+        <p id= 'hour'></p>
+    
+    
+    
+    </section>
+
+
+
+
+
+
+<script src=" ./anime.min.js">
+</script> 
+     
+<script src="interactive.js"></script>
+
+<script>
+
+
+    //The start of function which calculates risk due to age
+    function calculateHour() {
+        console.log('calculateHour()');
+
+        let questionHourResponse = document.getElementById('question-hour').selectedOptions[0].value;
+
+
+
+        console.log('Question (Hour) Answers:');
+        console.log(document.getElementById('question-hour').selectedOptions[0].text);
+        console.log(document.getElementById('question-hour').selectedOptions[0].value);
+        console.log(questionHourResponse);
+
+
+
+        document.getElementById('hour').innerHTML = 'I should be asleep by: '+ questionHourResponse;
+
+
+    }
+
+
+
+
+</script>
+
+    
+    
+</body>
+
+
+
+<style>
+.Intro{
+    background-color: #7b95b6;
+}
+
+</style>
+
+<div class='Intro'>
+<h2>
+<br />
+<br />
+<br />    
+    
+    Languages Used 
+<br />
+<br />
+<br />
+<br /> 
+<br>
+
+ <!-- 
+<br>
+<br>
+-->
+</h2>
+</div>
+
+<style>
+    .ProgText{
+
+        background-color: #EEE662;
+
+
+    }
+</style>
+
+<div class='ProgText'>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<svg id = "J" width="108" height="176" viewBox="0 0 108 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M106.93 0.410004C107.62 0.410004 107.62 0.689991 107.62 0.959991C107.62 2.61999 107.39 4.83999 106.7 5.10999L97.4399 7.60001C95.8199 8.16001 95.12 9.82 95.12 12.03C94.89 30.84 95.12 75.66 95.12 85.9C94.89 98.35 94.66 116.05 90.7199 130.16C81.4599 163.08 54.38 175.26 26.6 175.26C18.72 175.26 11.55 174.43 6.91996 172.77C6.4613 172.526 6.07207 172.17 5.78873 171.734C5.5054 171.299 5.33723 170.798 5.29996 170.28L0.900001 132.65C0.670001 131.54 2.97997 129.65 3.67997 129.65C3.86686 129.658 4.04875 129.713 4.20933 129.809C4.3699 129.905 4.50412 130.039 4.59995 130.2C9.69995 140.71 15.48 152.89 20.35 160.63C21.7078 162.835 23.5217 164.724 25.67 166.17C27.99 167.83 31.92 168.93 35.86 168.93C52.06 168.93 59.01 156.48 62.02 129.65C63.41 118.03 62.94 98.94 62.48 85.65C62.02 71.26 60.16 22.85 59.24 12.65C59.01 9.64999 58.54 7.94999 56.69 7.64999L42.11 5.16C41.18 5.16 40.7199 2.67001 40.7199 1.29001C40.7199 0.740009 40.72 0.459991 41.41 0.459991L106.93 0.410004Z" fill="#150200"/>
+    </svg>
+    
+
+<svg width="102" height="176" viewBox="0 0 108 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M101.75 120.27C101.75 152.36 76.29 175.04 31.37 175.04C21.88 175.04 11 174.21 5.91001 172.04C5.3251 171.839 4.81357 171.468 4.44113 170.975C4.0687 170.481 3.85229 169.888 3.81992 169.27L0.349946 131.65C0.119946 130.82 2.66995 128.88 3.34995 128.88C3.80995 128.88 4.04 129.16 4.28 129.71C8.68 139.12 12.84 149.08 17.28 157.93C18.4919 160.535 20.4203 162.741 22.8399 164.29C26.5399 167.29 32.3299 168.72 38.5799 168.72C58.4899 168.72 73.5799 157.1 73.5799 139.12C73.5799 122.52 63.58 112.56 39.78 101.77C15.24 90.7 2.96994 77.15 2.96994 56.12C2.96994 27.07 31.6699 0.23999 70.0999 0.23999C79.5999 0.23999 88.86 1.61999 93.02 4.10999C93.5376 4.27167 93.9826 4.60884 94.2783 5.06335C94.574 5.51787 94.7019 6.0613 94.64 6.60001L97.42 42.6C97.42 43.43 95.34 45.09 94.42 45.09C93.96 45.09 93.73 45.09 93.5 44.54C89.1 34.54 84.6999 24.62 80.0699 14.94C79.1731 12.8473 77.6317 11.0956 75.67 9.94C72.67 8 68.96 6.62 63.17 6.62C46.73 6.62 32.61 19.35 32.61 36.77C32.61 51.71 41.4099 60.01 61.0899 71.63C82.8499 83.53 101.83 95.98 101.83 120.05L101.75 120.27Z" fill="#150200"/>
+</svg>
+
+
+<svg width=".." height=".." viewBox=".." fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d=".." fill=".."/>
+    </svg>
+    
+
+
+<svg width="62" height="178" viewBox="0 0 194 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1V197H67V132H126V197H193V1H126V65H67V1H1Z" fill="black" stroke="black"/>
+</svg>
+
+
+<svg width="130" height="177" viewBox="0 0 430 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M59 64V196H123V64H180V1H1V64H59Z" fill="black"/>
+    <path d="M210 1V196H278V102L321 171L368 102V196H429V1H363L321 64L278 1H210Z" fill="black"/>
+    <path d="M59 64V196H123V64H180V1H1V64H59Z" stroke="black"/>
+    <path d="M210 1V196H278V102L321 171L368 102V196H429V1H363L321 64L278 1H210Z" stroke="black"/>
+</svg>
+    
+
+<svg width="51" height="178" viewBox="0 0 157 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1V198H156V132H66V1H1Z" fill="black" stroke="black"/>
+</svg>
+
+<svg width=".." height=".." viewBox=".." fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d=".." fill=".."/>
+    </svg>
+
+
+
+<svg width="69" height="178" viewBox="0 0 39 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M38 1V14.5H16V34.5H38V46.5H1V1H38Z" fill="black" stroke="black"/>
+</svg>
+
+
+<svg width="62" height="178" viewBox="0 0 42 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.5 1H41V10H22.5L41 34V46.5H0.5V31H18.5L0.5 10V1Z" fill="black" stroke="black"/>
+</svg>
+
+<svg width="62" height="178" viewBox="0 0 42 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.5 1H41V10H22.5L41 34V46.5H0.5V31H18.5L0.5 10V1Z" fill="black" stroke="black"/>
+</svg>
+    
+    
+    
+
+
+        
+</div>
+
+    
+ <!-- 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+-->
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
